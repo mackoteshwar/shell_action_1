@@ -6,9 +6,9 @@ jobs:
     name: We test it locally with act
     steps:
       - name: Get Pokemon name
-        uses: philschmid/blog-custom-github-action@master
+        uses: mackoteshwar/shell_action_1/.github/actions/custom-action@main
         id: pokemon
         with:
-          pokemon_id: 150
+          pokemon_id: 151
       - name: Get the pokemon
         run: echo "${{ steps.pokemon.outputs.pokemon_name }} attack"
